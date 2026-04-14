@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+}
+
+.container-video {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.container-video video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.mascara {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 20px;
+}
+
+nav img {
+    width: 8rem;
+}
+
+.navegation {
+    display: flex;
+    gap: 48px;
+}
+
+.links {
+    position: relative;
+    font-family: "Mochiy Pop One", sans-serif;
+}
+
+.links::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    opacity: 50%;
+    transition: width 0.5s ease;
+}
+
+.links:hover::after {
+    width: 100%;
+}
+
+.btnNav {
+    font-family: "Mochiy Pop One", sans-serif;
+    font-size: 11px;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    background-color: #575757;
+}
+
+.btnNav:hover {
+    width: 155px;
+    height: 55px;
+    background-color: #232323;
+    transition: 0.5s;
+}
+
+.hero {
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Miltonian Tattoo", serif;
+    font-weight: 400;
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+
+.text-hero {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 40px;
+}
+
+.hero-buttons button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    background-color: #575757;
+}
+
+.hero-buttons button:hover {
+    background-color: #212020;
+    transition: 0.5s;
+}
+
+.home {
+    margin: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-home {
+    font-family: "Miltonian Tattoo", serif;
+    font-weight: 400;
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+
+.text-home {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+.artist {
+    margin: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-artist {
+    font-family: "Miltonian Tattoo", serif;
+    font-weight: 400;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.img-artist {
+    border-radius: 50%;
+    margin-bottom: 30px;
+    animation: flutuar 3s ease-in-out infinite
+}
+
+.text-artist {
+    font-family: "Miltonian Tattoo", serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.works {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 160px;
+}
+
+.title-works {
+    font-family: "Miltonian Tattoo", serif;
+    font-weight: 400;
+    font-size: 60px;
+    margin-bottom: 35px;
+}
+
+.group-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.img-work {
+    width: 600px;
+    border-radius: 30px;
+}
+
+.img-work:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+.address {
+    margin-bottom: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-address {
+    font-family: "Miltonian Tattoo", serif;
+    font-weight: 400;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.text-address {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.frame-address {
+    width: 800px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.title-contact {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.text-contact {
+    font-size: 30px;
+    text-align: center;
+}
+
+form {
+    width: 700px;
+    height: 500px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: #575757;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+input {
+    background-color: #c5c5c5;
+    color: #000;
+    border-radius: 10px;
+    width: 70%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    background-color: #c5c5c5;
+    color: #000;
+    border-radius: 10px;
+    width: 70%;
+    height: 200px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.btnSubmit {
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    color: #575757;
+}
+
+.btnSubmit:hover {
+    background-color: #212020;
+    color: #fff;
+    transition: 0.5s;
+}
+
+footer {
+    background-color: #000;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes flutuar {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .home, .artist, .works {
+        margin: 80px 20px;
+    }
+    .group-img {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .img-work {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .frame-address {
+        width: 90%;
+    }
+    .contact {
+        flex-direction: column;
+    }
+    form {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .navegation {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    h1, .title-home, .title-artist, .title-works, .title-address {
+        font-size: 36px !important;
+        text-align: center;
+    }
+    .text-hero {
+        font-size: 14px;
+        padding: 0 20px;
+        text-align: center;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .group-contact {
+        margin-right: 0;
+        text-align: center;
+    }
+    .title-contact {
+        font-size: 32px;
+    }
+    .text-contact {
+        font-size: 20px;
+    }
+}

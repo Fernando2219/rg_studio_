@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&family=Mochiy+Pop+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pirata+One&display=swap');
+    </style>
+    <title>Studio Tattoo</title>
+</head>
+
+<body>
+    <div class="container-video">
+        <video src="./videos/background.mp4" loop muted autoplay></video>
+        <div class="mascara"></div>
+    </div>
+    <header>
+        <nav>
+            <img src="./img/logo.png" alt="Logo">
+            <div class="navegation">
+                <a href="#home" class="links">Sobre Nós</a>
+                <a href="#artista" class="links">Tatuador</a>
+                <a href="#trabalhos" class="links">Trabalhos</a>
+                <a href="#endereco" class="links">Endereço</a>
+                <a href="#contato" class="links">Contato</a>
+            </div>
+            <a href="#contato"><button class="btnNav">Agende sua tattoo</button></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1 class="title-hero">Mais do que um estúdio, <br> um espaço de expressão.</h1>
+                <h2 class="text-hero">Aqui a arte encontra a pele e cada traço conta uma história única</h2>
+            </div>
+            <div class="hero-buttons">
+                <a href="#trabalhos"><button>Ver Trabalhos</button></a>
+                <a href="#contato"><button>Fale Conosco</button></a>
+            </div>
+        </section>
+        <section class="home" id="home">
+            <h2 class="title-home">Sobre Nós</h2>
+            <h3 class="text-home">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates <br> quibusdam maxime
+                perspiciatis
+                enim? Doloribus perspiciatis harum incidunt <br> quisquam enim quia optio debitis excepturi minus
+                ratione.
+                Magni <br> ea amet quibusdam.
+            </h3>
+        </section>
+
+        <section class="artist" id="artista">
+            <h2 class="title-artist">Tatuador</h2>
+            <img src="./img/avatar.jpg" alt="Artsita" class="img-artist">
+            <h4 class="text-artist">Ruan Giovanella</h4>
+        </section>
+        <section class="works" id="trabalhos">
+            <h2 class="title-works">Trabalhos Recentes</h2>
+            <div class="group-img">
+                <img src="./img/background.jpg" alt="Trabalho 1" class="img-work">
+                <img src="./img/background.jpg" alt="Trabalho 2" class="img-work">
+                <img src="./img/background.jpg" alt="Trabalho 3" class="img-work">
+                <img src="./img/background.jpg" alt="Trabalho 4" class="img-work">
+            </div>
+        </section>
+        <section class="address" id="endereco">
+            <h2 class="title-address">Nosso Endereço</h2>
+            <h3 class="text-address">Venha conhecer nosso estúdio</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1640.736963842059!2d-49.54183218159006!3d-27.17082287241437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dfbba526a2dc39%3A0xa19241dfee8c85e6!2sEmporio%20Integralle!5e1!3m2!1spt-BR!2sbr!4v1776189829428!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="frame-address"></iframe>
+        </section>
+        <section class="contact" id="contato">
+            <div class="group-contact">
+                <h2 class="title-contact"">Vamos criar sua próxima arte</h2>
+                <h3 class=" text-contact">Preencha o formulário ou nos chame no WhatsApp <br> (47) 99999-9999</h3>
+            </div>
+            <form onsubmit="enviarWhats(event)">
+                <input type="text" placeholder="Nome" id="nome">
+                <textarea name="mensagem" placeholder="Ideia" id="mensagem"></textarea>
+                <button type="submit" class="btnSubmit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2026 Studio Tattoo. Todos os direitos reservados
+    </footer>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
